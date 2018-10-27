@@ -1,8 +1,12 @@
 package DirtyCodeExamples;
 
 public class ReturnDirty {
+	
+	public ReturnDirty() {
+		
+	}
 
-	public boolean ReturnDirty() {
+	public boolean testReturn() {
 		Person person = new Person();
 		if (person.age > 18) {
 			//Do something long
@@ -20,3 +24,6 @@ public class ReturnDirty {
 		
 
 }
+}
+
+	
