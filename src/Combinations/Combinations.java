@@ -18,7 +18,23 @@ public class Combinations {
 		if (n == 0 && level > 0) {
 			return 1;
 		}
+	
 		return countCombinations(n - 1, level + 1) + countCombinations(n - 2, level + 1)
 				+ countCombinations(n - 3, level + 1);
 	}
+	public long newCountCombinations(int n, int level) {
+		
+		if (n < 0) {
+			return 0;
+		}
+		if (n == 0 && level == 0) {
+			return 0;
+		}
+		if (n == 0 && level > 0) {
+			return 1;
+		
+		
+	}
+	
+	
 }
